@@ -21,6 +21,16 @@ html, body {
 div {
     display: block;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 30px;
+}
+
 .text-white {
     color: #fff !important;
 }
@@ -211,7 +221,7 @@ div {
 }
 
 /* Tour section */
-.tour-section {
+#tour-section {
     background-color: #000;
 }
 
@@ -254,7 +264,6 @@ div {
 .content-section .places-list {
     margin: 0 -16px;
     padding: 32px 8px;
-    display: block;
 }
 
 .places-list .place-item {
@@ -265,30 +274,111 @@ div {
 }
 
 .place-item .place-img {
+    background-color: #fff;
+    vertical-align: middle;
+}
 
+.place-item .place-img:hover {
+    opacity: 0.6;
 }
 
 .place-item .place-body {
-
+    padding: 0.01em 16px;
+    background-color: #fff;
 }
 
-.place-item .place-heading {
-
+.place-desc, 
+.place-time,
+.place-body .place-heading {
+    margin: 15px 0;
 }
 
-.place-item .place-time {
-
-}
-
-.place-item .place-desc {
-
-}
 
 .place-item .place-buy-btn {
+    color: #fff;background-color: #000;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    display: inline-block;
+    border-radius: 3px;
+}
 
+.place-item .place-buy-btn:hover {
+    color: #000;
+    background-color: #ccc;
 }
 
 /* Footer */
 #footer{
 
+}
+
+#modal {
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0 ,0, 0,0.4);
+    }
+
+#modal .modal-container {
+    position: relative;
+    width: 900px;
+    background: #fff;
+    margin: auto;
+    padding: 0;
+}
+
+#modal .modal-header {
+    color: #fff;
+    background-color: #009688;
+    padding: 32px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 13px;
+    padding: 16px 14px;
+}
+
+.modal-body {
+    padding: 00.01em 16px;
+}
+
+.modal-body p {
+    margin: 15px 0;
+}
+
+.modal-body .modal-input{
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.modal-body .buy-tickets {
+    color: #fff;
+    background-color: #009688;
+    width: 100%;
+    margin: 16px 0;
+    padding: 16px;
+    border: none;
+}
+
+.modal-body .modal-help {
+    margin: 15px 0;
+    text-align: right;
+}
+
+.modal-help a {
+    color: #2196F3;
 }
