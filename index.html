@@ -128,9 +128,9 @@
 
         </div>
     </div>
-    <!-- Buy tickets -->
-    <div class="modal">
-        <div class="modal-container">
+    <!-- Modal buy tickets -->
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
             <header class="modal-header">
                 <h2 class="text-header">
                     <i class="ti-bag"></i>
@@ -163,12 +163,14 @@
     <!-- OPEN/CLOSE Modal -->
     <script>
         const buyBtns = document.querySelectorAll('.js-buy-ticket')
-        const clsBtns = document.querySelectorAll('.js-close-modal')
-        const modal = document.querySelector('.modal')
+        const modal = document.querySelector('.js-modal')
+        const modalContainer = document.querySelector('.js-modal-container')
+        const clsBtns = document.querySelector('.js-close-modal')
+        // Hàm mở Modal 
         function showBuyTickets() {
             modal.classList.add('open')
         }
-
+        // Hàm đóng modal 
         function closeBuyTickets() {
             modal.classList.remove('open')
         }
@@ -177,9 +179,14 @@
             buyBtn.addEventListener('click', showBuyTickets)
         }
 
-        for (const clsBtn of clsBtns) {
-            clsBtn.addEventListener('click', closeBuyTickets)
-        }
+        clsBtns.addEventListener('click', closeBuyTickets)
+
+        modal.addEventListener('click', closeBuyTickets)
+
+        modalContainer.addEventListener('click', function (event){
+            event.stopPropagation()
+        })
+        
     </script>
 </body>
 </html>
