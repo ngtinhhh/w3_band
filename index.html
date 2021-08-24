@@ -10,30 +10,30 @@
 </head>
 <body>
     <div id="main">
-        <div id="header">
+        <div class="top bar bg-black">
             <!-- Begin: Nav -->
-            <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
-                <li>
-                    <a href="">
-                        More
-                        <i class="nav-arrow-down ti-angle-down"></i>
-                    </a>
-                    <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <a href="#" class="bar-item button padding-large">Home</a> 
+            <a href="#" class="bar-item button padding-large">Band</a> 
+            <a href="#" class="bar-item button padding-large">Tour</a> 
+            <a href="#" class="bar-item button padding-large">Contact</a>  
+            <div class="dropdown-hover">
+                <button class="bar-item button padding-large bg-black" title="More">
+                    More
+                    <i class="nav-arrow-down ti-angle-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" class="bar-item button bg-white">Extras</a>   
+                    <a href="#" class="bar-item button bg-white">Media</a>    
+                    <a href="#" class="bar-item button bg-white">Merchandise</a>  
+                </div>
+                <div class="clear"></div>
+            </div>
+            
             <!-- End: Nav -->
             <!-- Begin: Search Button -->
-            <div class="search-btn">
+            <!-- <div class="search-btn">
                 <i class="search-icon ti-search"></i>
-            </div>
+            </div> -->
             <!-- End: Search Button -->
         </div>
 
@@ -46,82 +46,94 @@
 
         <div id="content">
             <!-- About section -->
-            <div class="content-section">
-                <h2 class="section-heading">THE BAND</h2>
-                <p class="section-sub-heading">We love music</p>
+            <div class="container content padding-64" style="max-width: 800px;">
+                <h2 class="wide center">THE BAND</h2>
+                <p class="opacity center">
+                    <i>We love music</i>
+                </p>
                 <p class="about-text">
                     We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-                <div class="member-list">
-                    <div class="member-item">
-                        <p class="member-name">Name</p>
-                        <img src="/assets/img/band/member.jpg" alt="" class="member-img">
+                <div class="padding-32">
+                    <div class="col-third center">
+                        <p>Name</p>
+                        <img src="/assets/img/band/member.jpg" alt="" style="width: 60%" class="round margin-bottom">
                     </div>
-                    <div class="member-item">
-                        <p class="member-name">Name</p>
-                        <img src="/assets/img/band/member.jpg" alt="" class="member-img">
+                    <div class="col-third center">
+                        <p>Name</p>
+                        <img src="/assets/img/band/member.jpg" alt="" style="width: 60%" class="round margin-bottom">
                     </div>
-                    <div class="member-item">
-                        <p class="member-name">Name</p>
-                        <img src="/assets/img/band/member.jpg" alt="" class="member-img">
+                    <div class="col-third center">
+                        <p>Name</p>
+                        <img src="/assets/img/band/member.jpg" alt="" style="width: 60%" class="round margin-bottom">
                     </div>
                     <div class="clear"></div>
                 </div>
             </div>
             <!-- Tour section -->
-            <div id="tour-section">
-                <div class="content-section">
-                    <h2 class="section-heading text-white">TOUR DATES</h2>
-                    <p class="section-sub-heading text-white">Remember to book your tickets!</p>
+            <div class="bg-black">
+                <div class="container content padding-64" style="max-width: 800px;">
+                    <h2 class="wide center bg-black">TOUR DATES</h2>
+                    <p class="opacity center">
+                        <i>Remember to book your tickets!</i>
+                    </p>
                     
                     <!-- Buy Ticket -->
-                    <ul class="tickets-list">
-                        <li class="text-gray">September <span class="sold-out text-white">Sold out</span></li>
-                        <li class="text-gray">Octorber <span class="sold-out text-white">Sold out</span></li>
-                        <li class="text-gray">November <span class="quantity text-white">3</span></li>
+                    <ul class="ul border text-white bg-white">
+                        <li class="padding">September <span class="tag bg-red margin-left">Sold out</span></li>
+                        <li class="padding">Octorber <span class="tag bg-red margin-left">Sold out</span></li>
+                        <li class="padding">November <span class="badge right margin-right" style="background-color: #000;">3</span></li>
                     </ul>
                     <!-- Place -->
-                    <div class="places-list">
-                        <div class="place-item">
-                            <img src="/assets/img/place/place1.jpg" alt="New York" width="100%" class="place-img">
-                            <div class="place-body">
+                    <div class="row-padding padding-32" style="margin: 0 -16px;">
+                        <div class="col-third margin-bottom">
+                            <img src="/assets/img/place/place1.jpg" alt="New York" width="100%" style="width: 100%;" class="hover-opacity" />
+                            <div class="container bg-white">
                                 <p>
                                     <b>New York</b>
                                 </p>
-                                <p class="place-time text-gray">Fri 27 Nov 2016</p>
+                                <p class="opacity">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="button margin-bottom bg-black js-buy-ticket">Buy Tickets</button>
                                 <div class="clear"></div>
                             </div>
                         </div> 
 
-                        <div class="place-item">
-                            <img src="/assets/img/place/place2.jpg" alt="Paris" width="100%" class="place-img">
-                            <div class="place-body">
+                        <div class="col-third margin-bottom">
+                            <img src="/assets/img/place/place2.jpg" alt="Paris" width="100%" style="width: 100%;" class="hover-opacity" />
+                            <div class="container bg-white">
                                 <p>
                                     <b>Paris</b>
                                 </p>
-                                <p class="place-time">Sat 28 Nov 2016</p>
+                                <p class="opacity">Sat 28 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="button margin-bottom bg-black js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div> 
 
-                        <div class="place-item">
-                            <img src="/assets/img/place/place3.jpg" alt="San Francisco" width="100%" class="place-img">
-                            <div class="place-body">
+                        <div class="col-third margin-bottom">
+                            <img src="/assets/img/place/place3.jpg" alt="San Francisco" width="100%" style="width: 100%;" class="hover-opacity" />
+                            <div class="container bg-white">
                                 <p>
                                     <b>San Francisco</b>
                                 </p>    
-                                <p class="place-time">Sun 29 Nov 2016</p>
+                                <p class="opacity">Sun 29 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="button margin-bottom bg-black js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div> 
                         <div class="clear"></div>
                     </div>
                 </div>
             </div>   
+            <!-- Contact section -->
+            <div class="container content padding-64" style="max-width: 800px;">
+                <h2 class="wide center">CONTACT</h2>
+                <p class="opacity center">
+                    <i>Fan?Drop a note!</i>
+                </p>
+                
+            </div>
         </div>
 
         <div id="footer">
@@ -131,32 +143,33 @@
     <!-- Modal buy tickets -->
     <div class="modal js-modal">
         <div class="modal-container js-modal-container">
-            <header class="modal-header">
-                <h2 class="text-header">
+            <header class="container center wide bg-teal padding-32">
+                <h2>
                     <i class="ti-bag"></i>
                     Tickets
                 </h2>
-                <div class="modal-close js-close-modal"><i class="ti-close"></i></div>
+                <div class="modal-close button js-close-modal"><i class="ti-close"></i></div>
             </header>
-            <div class="modal-body">
+            <div class="container">
                 <p>
                     <label for="" class="modal-label">
                         <i class="ti-shopping-cart"></i>
                         Tickets, $15 per person
                     </label>
                 </p>
-                <input type="text" class="modal-input" placeholder="How many?">
+                <input type="text" class="input" placeholder="How many?">
                 <p>
                     <label for="" class="modal-label">
                         <i class="ti-shopping-cart"></i>
                         Send To
                     </label>
                 </p>
-                <input type="text" class="modal-input" placeholder="Enter email">
-                <button class="buy-tickets">
+                <input type="text" class="input" placeholder="Enter email">
+                <button class="button bg-teal block section padding-16 right">
                     PAY <i class="ti-check"></i>
                 </button>
-                <p class="modal-help">Need <a href="">help?</a> </p>
+                <p class="right">Need <a href="#" class="text-blue">help?</a> </p>
+                <div class="clear"></div>
             </div>
         </div>
     </div>
