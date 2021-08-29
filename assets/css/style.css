@@ -7,6 +7,7 @@
 
 html {
     font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -461,9 +462,32 @@ li>a {
 
 /* End Contact */
 
+/* Begin Map */
+
+/* End Map */
+
 /*Begin  Footer */
 #footer{
+    padding: 46px 16px;
+    text-align: center;
+}
 
+#footer .social-list {
+    font-size: 23px;
+}
+
+#footer .social-list a,
+#footer .social-list p {
+    text-decoration: none;
+    color: rgba(0 , 0, 0,0.6)
+}
+
+#footer .social-list a:hover {
+    color: rgba(0 , 0, 0,0.3)
+}
+
+#footer .social-list p {
+    font-size: 15px;
 }
 /* End Footer */
 
