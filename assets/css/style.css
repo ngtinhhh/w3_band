@@ -84,8 +84,10 @@ i {
     background-color: #009688;
 }
 
-ul>li {
+ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 li>a {
@@ -312,7 +314,7 @@ li>a {
     display: inline-block;
 }
 
-#nav > li {
+#nav > li{
     display: inline-block;
     position: relative;
 }
@@ -375,7 +377,9 @@ li>a {
 #slider{
     margin-top: 46px;
     padding-top: 50%;
-    background: url('./assets/img/slider/slider1.jpg') top center / cover no-repeat;
+    /* background: url('./assets/img/slider/slider1.jpg') top center / cover no-repeat; */
+    background-image: url('./assets/img/slider/slider1.jpg');
+    
     position: relative;
 }
 
@@ -428,6 +432,11 @@ li>a {
 #content .about-text {
     margin: 15px 0;
     text-align: justify;
+}
+.content-member,
+.place-section,
+.contact-section {
+    display: flex;;
 }
 /* End Content */
 
@@ -543,13 +552,112 @@ li>a {
 }
 
 /* Emd Modal */
+/*  */
 
-/* Mobile */
-@media only screen and (max-width: 37.5em) {
-
+.nav__tablet {
+    display: none;
 }
-/* Tablet */
-@media only screen and (min-width: 37.5em) {
 
+.nav__mobile {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
 }
-/* PC */    
+
+.nav_mobile li {
+    width: 130px;
+}
+
+.nav__mobile li a {
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nav__menu:hover,
+.nav__mobile li a:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.nav__menu:hover .menu-icon {
+    color: #000;
+}
+
+.nav__menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 16px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+}
+
+.menu-icon {
+    color: #fff;
+    font-size: 26px;
+}
+
+.nav__overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0 , 0, 0, 0.3);
+}
+
+.nav__input {
+    display: none;
+}
+
+.nav__input:checked ~ .nav__overlay {
+    display: block;
+}
+
+.nav__input:checked ~ .nav__tablet {
+    display: block;
+}
+
+/* Mobile & Tablet */
+@media only screen and (max-width: 64em) {
+    #nav> li,
+    .search-btn {
+        display: none;
+    }
+
+    .nav__menu {
+        display: block;
+    }
+
+    .content-member {
+        display: block;
+    }
+
+    .member {
+        width: 100%;
+    }
+
+    .place-section {
+        display: block;
+    }
+
+    .place {
+        width: 100%;
+    }
+
+    .contact-section {
+        display: block;
+    }
+
+    .contact-form > .col-half {
+        width: 100%;
+    }
+}

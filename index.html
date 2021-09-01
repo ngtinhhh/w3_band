@@ -29,6 +29,22 @@
            <div class="search-btn">
                <i class="search-icon ti-search"></i> 
             </div>
+            <input type="checkbox" hidden name=""  class="nav__input" id="nav__mobile-input">
+            
+            <label for="nav__mobile-input" class="nav__overlay"></label>
+            
+            <label for="nav__mobile-input" class="nav__tablet">
+                <ul class="nav__mobile">
+                    <li class="not-hide"><a href="#">Home</a></li>
+                    <li><a href="#band">Band</a></li>
+                    <li><a href="#tour">Tour</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </label>
+
+            <label for="nav__mobile-input" class="nav__menu">
+                <i class="menu-icon ti-menu-alt"></i>
+            </label>
         </div>
         <!-- End Header -->
 
@@ -52,18 +68,18 @@
                 <p class="about-text">
                     We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-                <div class="row padding-32" style="display:flex;">
-                    <div class="col col-third text-center">
+                <div class="content-member row padding-32">
+                    <div class="member col col-third text-center">
                         <p>Name</p>
-                        <img src="/assets/img/band/member.jpg" alt="" style="width: 60%" class="round margin-bottom">
+                        <img src="./assets/img/band/member.jpg" alt="" style="width: 60%" class="round margin-bottom">
                     </div>
-                    <div class="col-third text-center">
+                    <div class="member col-third text-center">
                         <p>Name</p>
-                        <img src="/assets/img/band/member.jpg" alt="" style="width: 60%" class="round margin-bottom">
+                        <img src="./assets/img/band/member.jpg" alt="" style="width: 60%" class="round margin-bottom">
                     </div>
-                    <div class="col-third text-center">
+                    <div class="member col-third text-center">
                         <p>Name</p>
-                        <img src="/assets/img/band/member.jpg" alt="" style="width: 60%" class="round margin-bottom">
+                        <img src="./assets/img/band/member.jpg" alt="" style="width: 60%" class="round margin-bottom">
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -83,9 +99,9 @@
                         <li class="padding">November <span class="badge right margin-right" style="background-color: #000;">3</span></li>
                     </ul>
                     <!-- Place -->
-                    <div class="row row-padding padding-32" style="margin: 0 -16px; display:flex;">
-                        <div class="col col-third margin-bottom">
-                            <img src="/assets/img/place/place1.jpg" alt="New York" width="100%" style="width: 100%;" class="hover-opacity" />
+                    <div class="place-section row row-padding padding-32" style="margin: 0 -16px;">
+                        <div class="place col col-third margin-bottom">
+                            <img src="./assets/img/place/place1.jpg" alt="New York" width="100%" style="width: 100%;" class="hover-opacity" />
                             <div class="container bg-white">
                                 <p>
                                     <b>New York</b>
@@ -97,8 +113,8 @@
                             </div>
                         </div> 
 
-                        <div class="col-third margin-bottom">
-                            <img src="/assets/img/place/place2.jpg" alt="Paris" width="100%" style="width: 100%;" class="hover-opacity" />
+                        <div class="place col-third margin-bottom">
+                            <img src="./assets/img/place/place2.jpg" alt="Paris" width="100%" style="width: 100%;" class="hover-opacity" />
                             <div class="container bg-white">
                                 <p>
                                     <b>Paris</b>
@@ -109,8 +125,8 @@
                             </div>
                         </div> 
 
-                        <div class="col-third margin-bottom">
-                            <img src="/assets/img/place/place3.jpg" alt="San Francisco" width="100%" style="width: 100%;" class="hover-opacity" />
+                        <div class="place col-third margin-bottom">
+                            <img src="./assets/img/place/place3.jpg" alt="San Francisco" width="100%" style="width: 100%;" class="hover-opacity" />
                             <div class="container bg-white">
                                 <p>
                                     <b>San Francisco</b>
@@ -130,14 +146,14 @@
                 <p class="section-sub-heading">
                     <i>Fan?Drop a note!</i>
                 </p>
-                <div class="row row-padding padding-32" style="display:flex;">
+                <div class="contact-section row row-padding padding-32">
                     <div class="col col-half margin-bottom contact-info">
                         <p class="mt-0"><i class="ti-location-pin"></i>Chicago, US</p>
                         <p><i class="ti-mobile"></i>Phone: +00 151515</p>
                         <p><i class="ti-email"></i>Email: mail@mail.com</p>
                     </div>
                     <form action="">
-                        <div class="row row-padding contact-form" style="display: flex;">
+                        <div class="row row-padding contact-form">
                             <div class="col col-half">
                                 <input type="text" name="" placeholder="Name" required id="" class="form-control">
                             </div>
@@ -156,7 +172,7 @@
             </div>
             <!-- Map Section -->
             <div>
-                <img src="/assets/img/slider/map.jpg" alt="Map" style="width: 100%;">
+                <img src="./assets/img/slider/map.jpg" alt="Map" style="width: 100%;">
             </div>
         </div>
 
