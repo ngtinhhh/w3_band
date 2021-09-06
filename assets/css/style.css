@@ -662,4 +662,12 @@ li>a {
     .contact-form > .col-half {
         width: 100%;
     }
+    .s-col-full {
+        width: 100%;
+    }
+    
+    .s-full-width {
+        width: 100%;
+    }
+    
 }
